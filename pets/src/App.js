@@ -25,14 +25,16 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App min-h-screen flex flex-col">
       <Navbar setActiveTab={setActiveTab} />
-      <div className="border-[50px] border-blue-900 w-full min-h-screen flex flex-col justify-between box-border">
-        <div className="p-4 flex-grow">
+      <div className="flex-grow w-full border-[30px] border-blue-900 box-border">
+        <div className="bg-[#61988E] h-12"></div>
+        <div className="p-4">
           {renderContent()}
         </div>
-        <Footer />
+        <div className="bg-[#61988E] h-12"></div>
       </div>
+      <Footer />
     </div>
   );
 }
